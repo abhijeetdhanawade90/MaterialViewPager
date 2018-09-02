@@ -43,6 +43,15 @@ public class HeaderDesign {
         headerDesign.drawable = drawable;
         return headerDesign;
     }
+    
+     public static HeaderDesign fromColorAndIconUrl(@ColorInt int color, String headerIconUrl, String imageUrl, boolean isInitializing) {
+        HeaderDesign headerDesign = new HeaderDesign();
+        headerDesign.headerColor = color;
+        headerDesign.headerIconUrl = headerIconUrl;
+        headerDesign.imageUrl = imageUrl;
+        headerDesign.isInitializing = isInitializing;
+        return headerDesign;
+    }
 
     public int getColor() {
         return color;
