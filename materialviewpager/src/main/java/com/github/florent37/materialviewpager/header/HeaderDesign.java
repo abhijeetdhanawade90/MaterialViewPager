@@ -51,6 +51,18 @@ public class HeaderDesign {
         headerDesign.imageUrl = imageUrl;
         headerDesign.isInitializing = isInitializing;
         return headerDesign;
+     }
+
+    public int getHeaderColor() {
+        return headerColor;
+    }
+
+    public String getHeaderIconUrl() {
+        return headerIconUrl;
+    }
+
+    public boolean isInitializing() {
+        return isInitializing;
     }
 
     public int getColor() {
